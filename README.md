@@ -11,11 +11,11 @@ Data is mocked using JSON files.
 ```
 boost-dashboard/
 ├── public/
-│   └── assets/               # SVG, etc.
+│   |── assets/               # SVG, etc.
+|   └── mock/                 # Mock data files
 ├── src/
 │   ├── css/                  # CSS files
 │   ├── js/                   # JS files
-│   ├── mock/                 # Mock data files
 │   └── main.js               # App entry point
 ├── index.html                # HTML file
 ├── package.json              # Dependencies
