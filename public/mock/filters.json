@@ -1,0 +1,32 @@
+[
+  {
+    "value": "subscribed",
+    "label": "מנוי פעיל",
+    "isActive": true
+  },
+  {
+    "value": "not-subscribed",
+    "label": "ללא מנוי",
+    "isActive": true
+  },
+  {
+    "value": "next-class",
+    "label": "יש שיבוץ עתידי",
+    "isActive": true
+  },
+  {
+    "value": "no-next-class",
+    "label": "ללא שיבוץ עתידי",
+    "isActive": true
+  },
+  {
+    "value": "attended",
+    "label": "השתתף בשיעור אחרון",
+    "isActive": true
+  },
+  {
+    "value": "not-attended",
+    "label": "לא השתתף בשיעור אחרון",
+    "isActive": true
+  }
+]

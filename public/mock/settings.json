@@ -1,0 +1,25 @@
+{
+  "absentDays": 7,
+  "defaultSort": {
+    "column": null,
+    "direction": "asc"
+  },
+  "columns": [
+    { "key": "checkBox", "label": "", "isActive": true },
+    { "key": "clientName", "label": "שם הלקוח", "isActive": true },
+    { "key": "lastClass", "label": "נראה לאחרונה", "isActive": true },
+    { "key": "nextClass", "label": "שיבוץ עתידי", "isActive": true },
+    { "key": "isSubscribed", "label": "מנוי", "isActive": true },
+    { "key": "actions", "label": "", "isActive": true }
+  ],
+  "summary": [
+    { "key": "totalAbsences", "type": "dark", "title": "לא הגיעו" },
+    { "key": "unRegistered", "type": "light", "title": "לא נרשמו כלל" },
+    {
+      "key": "registeredDidntShow",
+      "type": "light",
+      "title": "נרשמו ולא הגיעו"
+    },
+    { "key": "withoutNextClass", "type": "light", "title": "ללא שיבוץ עתידי" }
+  ]
+}

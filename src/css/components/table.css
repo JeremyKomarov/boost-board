@@ -1,0 +1,244 @@
+.report__results {
+  max-width: 100%;
+}
+
+.results__header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.results__title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: var(--text-dark);
+  letter-spacing: 0.0095em;
+  width: fit-content;
+}
+
+.filter-tags {
+  display: flex;
+  gap: 0.8rem;
+  height: fit-content;
+}
+
+.filter-tag {
+  height: 3.6rem;
+  background: var(--border);
+  border: 1px solid #717171;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  color: var(--text-main);
+  padding: 0 1rem;
+}
+
+.filter-tag__label {
+  margin-left: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.filter-tag__remove {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+}
+
+.filter-tag__remove img {
+  height: 1rem;
+  width: 1rem;
+  color: var(--text-main);
+}
+
+.results-table {
+  width: 100%;
+  border-spacing: 0 1rem;
+  border-collapse: separate;
+  letter-spacing: 0.0095em;
+}
+
+.results-table__head th {
+  padding-right: 1rem;
+  text-align: right;
+  font-size: 2rem;
+  height: 6.1rem;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.result-sort__button {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: inherit;
+  color: var(--text-light);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.0095em;
+  line-height: 1;
+}
+
+.icon--sort {
+  width: 0.875rem;
+  height: 1.4rem;
+  margin-inline-start: 1rem;
+}
+
+.results-table__cell.checkBox {
+  width: 2.8rem;
+}
+
+.results-table__cell.clientName {
+  width: 27.7rem;
+}
+
+.results-table__cell.clientName .icon--sort {
+  width: 0.899rem;
+}
+
+.results-table__cell.lastClass {
+  width: 37.7rem;
+}
+
+.results-table__cell.nextClass {
+  width: 14rem;
+}
+
+.results-table__cell.isSubscribed {
+  width: 16.5rem;
+}
+
+.results-table__cell.actions {
+  width: 5.3rem;
+}
+
+.results-table__cell div {
+  width: fit-content;
+}
+
+.results-table__body td {
+  height: 2.9rem;
+}
+
+.results-table__body td > span {
+  display: flex;
+  align-items: center;
+  height: 2.1rem;
+}
+
+.results-table__body tr {
+  background: var(--bg-card);
+  font-size: var(--normal-font-size);
+  color: var(--text-main);
+  border: 1.2rem;
+  height: 5.7rem;
+}
+
+.results-table__body td:first-child {
+  border-radius: 0 1.2rem 1.2rem 0;
+}
+
+.results-table__body td:last-child {
+  border-radius: 1.2rem 0 0 1.2rem;
+}
+
+.results-table__body td {
+  padding-right: 1rem;
+  vertical-align: middle;
+  border: none;
+}
+
+.client-name-box {
+  text-decoration: underline;
+}
+
+.last-seen-details {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  color: var(--text-main);
+}
+
+.last-seen-details__label {
+  font-size: var(--normal-font-size);
+  min-width: 17rem;
+  padding: 0.4rem 0;
+  color: #959595;
+  margin-right: 0.6rem;
+  letter-spacing: 0;
+}
+
+.last-seen-details__label--active {
+  padding: 0;
+  color: var(--text-dark);
+  margin-right: 0;
+  letter-spacing: 0.0095em;
+}
+
+.last-seen-details__date {
+  color: var(--text-main);
+  font-size: var(--normal-font-size);
+  width: 5.3rem;
+}
+
+.last-seen-details__time {
+  background: rgba(42, 42, 42, 0.1011);
+  color: var(--text-dark);
+  border-radius: 0.6rem;
+  min-width: 4.6rem;
+  text-align: center;
+  box-shadow: 0px 3px 3px 0px #00000029;
+  font-size: 1.4rem;
+  margin-right: 0.5rem;
+  width: 5.4rem;
+  height: 2.9rem;
+  letter-spacing: 0;
+}
+
+.status-cell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #7070700d;
+  color: #707070;
+  border-radius: 0.6rem;
+  height: 2.9rem !important;
+  width: fit-content;
+  padding: 0.4rem 0.6rem;
+}
+
+.status-cell--class {
+  background: #36adc11a;
+}
+
+.status-cell__icon {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+.status-cell__pill {
+  display: flex;
+  align-items: center;
+  color: var(--accent);
+  font-size: var(--normal-font-size);
+}
+
+.subscription-pill {
+  padding: 0.4rem 0.6rem;
+  background: #7070700d;
+  border-radius: 0.6rem;
+  width: fit-content;
+  color: #707070;
+  font-size: var(--normal-font-size);
+  gap: 1rem;
+  height: 2.9rem !important;
+}
+
+.subscription-pill--active {
+  background: #36adc11a;
+  color: var(--accent);
+}

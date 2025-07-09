@@ -1,0 +1,162 @@
+.filter-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: none;
+}
+
+.filter-sidebar.open {
+  display: block;
+}
+
+.filter-sidebar__overlay {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(50, 50, 76, 0.45);
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.filter-sidebar__panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 37.5rem;
+  height: 100vh;
+  background: #ffffff;
+  padding: 1.6rem 1.6rem 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.3rem;
+}
+
+.filter-sidebar__left {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.filter-sidebar__filter {
+  background: transparent;
+  border: none;
+  display: flex;
+}
+
+.filter-sidebar__filter img {
+  height: 2.625rem;
+  width: 2.8rem;
+  color: var(--bg-dark);
+}
+
+.filter-sidebar__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--bg-dark);
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.filter-sidebar__cancel {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  height: 4rem;
+}
+
+.filter-sidebar__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  position: relative;
+  width: fit-content;
+}
+
+.filter-checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.filter-sidebar_custom-checkbox {
+  width: 3.6rem;
+  height: 3.6rem;
+  border: 1px solid var(--bg-dark);
+  border-radius: 0.8rem;
+  display: inline-block;
+}
+
+.filter-checkbox
+  input[type="checkbox"]:checked
+  + .filter-sidebar_custom-checkbox {
+  background: var(--bg-dark) url("/public/assets/icon-check.svg") center
+    no-repeat;
+}
+
+.filter-checkbox
+  input[type="checkbox"]:focus
+  + .filter-sidebar_custom-checkbox {
+  box-shadow: 0 0 0 1px var(--bg-dark);
+}
+
+.filter-checkbox__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter-checkbox__main {
+  font-size: var(--normal-font-size);
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.8rem;
+}
+
+.filter-checkbox__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: #9b9b9b;
+}
+
+.filter-sidebar__apply {
+  background: var(--bg-dark);
+  color: var(--bg-card);
+  width: 100%;
+  height: 5.6rem;
+  border-radius: var(--border-radius-l);
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.filter-sidebar__divider {
+  border: 1px solid var(--bg-main);
+  width: 100%;
+  margin-top: 1.4rem;
+}
+
+.filter-sidebar__divider:not(:last-child) {
+  margin-bottom: 1.4rem;
+}

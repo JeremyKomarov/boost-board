@@ -1,0 +1,28 @@
+.report__header {
+  display: flex;
+  align-items: center;
+  gap: 3.562rem;
+  margin-bottom: 3.1rem;
+}
+
+.icon--arrow {
+  width: 1.163rem;
+  height: 2rem;
+}
+
+.report__back-btn {
+  background: var(--bg-card);
+  border: 1px solid #b9b9b9;
+  border-radius: var(--border-radius-l);
+  width: 5.6rem;
+  height: 5.6rem;
+  cursor: pointer;
+}
+
+.report__title {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: var(--text-main);
+  line-height: 1;
+  letter-spacing: 0.0095em;
+}

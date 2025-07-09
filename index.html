@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Boost Board – לוח נוכחות וסינון וחיפוש לקוחות."
+    />
+    <title>Boost Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="/public/assets/boost-board.png"
+      type="image/png"
+    />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        media="print"
+        href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      />
+    </noscript>
+  </head>
+  <body class="report">
+    <header class="report__header">
+      <button class="report__back-btn u-flex-center" aria-label="חזרה">
+        <img
+          src="./assets/icon-arrow-right.svg"
+          alt="חזרה"
+          class="icon icon--arrow"
+        />
+      </button>
+      <h1 class="report__title">היעדרויות</h1>
+    </header>
+
+    <main class="report__main">
+      <section class="report__controls">
+        <form class="controls__search" autocomplete="off">
+          <img
+            src="./assets/icon-search.svg"
+            alt="חיפוש"
+            class="icon icon--search"
+          />
+          <input
+            type="text"
+            class="controls__input"
+            id="searchField"
+            placeholder="חיפוש לפי שם"
+            aria-label="שדה חיפוש"
+          />
+        </form>
+        <button
+          class="controls__filter u-flex-center"
+          id="filterBtn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="filterSidebar"
+          aria-label="פתיחת סינון"
+        >
+          <img
+            src="./assets/icon-settings.svg"
+            alt="סינון"
+            class="icon icon--filter"
+          />
+          <span>סינון</span>
+        </button>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="report__summary" id="reportSummary"></section>
+      <section class="report__results">
+        <div class="results__header">
+          <h2 class="results__title">כותרת</h2>
+          <div class="filter-tags" id="filterTags"></div>
+        </div>
+        <table class="results-table">
+          <thead class="results-table__head" id="tableHead"></thead>
+          <tbody class="results-table__body" id="tableBody"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <div class="filter-sidebar" id="filterSidebar" aria-hidden="true">
+      <div class="filter-sidebar__overlay" id="filterSidebarOverlay"></div>
+      <aside class="filter-sidebar__panel">
+        <div class="filter-sidebar__header">
+          <div class="filter-sidebar__left">
+            <button class="filter-sidebar__filter" type="button">
+              <img src="./assets/icon-settings.svg" alt="סינון" />
+            </button>
+            <h3 class="filter-sidebar__title">סינון תוצאות</h3>
+          </div>
+          <button
+            type="button"
+            id="cancelFilters"
+            class="filter-sidebar__cancel"
+          >
+            <img
+              src="./assets/icon-round-close.svg"
+              alt="close"
+              class="icon--close"
+            />
+          </button>
+        </div>
+
+        <form class="filter-sidebar__form" id="filterForm"></form>
+
+        <button type="button" id="applyFilters" class="filter-sidebar__apply">
+          הצג תוצאות
+        </button>
+      </aside>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
